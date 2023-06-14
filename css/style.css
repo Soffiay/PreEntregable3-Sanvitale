@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+header .navbar {
+  display: flex;
+  background-color: darksalmon !important;
+  cursor: pointer;
+}
+header .navbar-brand img {
+  width: 250px;
+  height: 100px;
+}
+
+/*header quien soy*/
+.texto2, .texto3, .texto4, .texto5 {
+  display: flex;
+  background-color: #F08080;
+}
+
+.img8 {
+  justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 100px;
+}
+
+body {
+  background-image: url(/imagenes/pexels-engin-akyurt-9807347.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .section1 .h2 .p {
+  justify-content: center;
+}
+
+/*fotos*/
+.img2, .img3, .img5, .img6, .img7 {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+}
+
+/*estilo quiensoy.html*/
+.contendor1 {
+  overflow: auto;
+  text-align: justify;
+}
+.contendor1 .img9 {
+  float: right;
+  margin-left: 5rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+footer {
+  background-color: #AF7AC5;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+footer .red1,
+footer .red2,
+footer .red3 {
+  color: antiquewhite;
+}
+
+.mapa {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

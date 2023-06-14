@@ -1,0 +1,36 @@
+body {
+    background-image: url(/imagenes/pexels-engin-akyurt-9807347.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .section1{
+        .h2{
+            .p{
+                justify-content: center;
+            }
+        }
+        
+    }
+}
+
+/*fotos*/
+.img2, .img3, .img5, .img6, .img7{
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    
+}
+
+/*estilo quiensoy.html*/
+.contendor1{
+    overflow: auto;
+    text-align: justify;
+    .img9{
+        float: right;
+        margin-left: 5rem;
+        width: 20rem;
+        height: 20rem;
+
+    }
+}

@@ -1,0 +1,30 @@
+header{
+    .navbar{
+        display: flex;
+        background-color: darksalmon !important;
+        cursor: pointer;
+    }
+    .navbar-brand img{
+        width: 250px;
+        height: 100px;
+    }
+    }
+        
+
+
+/*header quien soy*/
+
+.texto2, .texto3, .texto4, .texto5{
+    display: flex;
+    background-color: #F08080;
+
+}
+.img8{
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 100px;
+}
+
+
+
