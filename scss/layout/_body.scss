@@ -1,36 +1,108 @@
+@mixin sizes($widght, $height) {
+  width: $widght;
+  height: $height;
+}
+
 body {
-    background-image: url(/imagenes/pexels-engin-akyurt-9807347.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    .section1{
-        .h2{
-            .p{
-                justify-content: center;
-            }
-        }
-        
+  background-image: url(../imagenes/pexels-engin-akyurt-9807347.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .section1 {
+    .h2 {
+      .p {
+        justify-content: center;
+      }
     }
+  }
 }
 
 /*fotos*/
-.img2, .img3, .img5, .img6, .img7{
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    width: 250px;
-    height: 300px;
-    
+.img2,
+.img3,
+.img5,
+.img6,
+.img7 {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  @include sizes(250px, 300px);
+}
+
+.fotos-1,
+.fotos-2,
+.fotos-3,
+.fotos-4 {
+  @include sizes(250px, 250px);
+  margin: 20px;
+}
+
+.etiqueta {
+  .foto-5,
+  .foto-6,
+  .foto-7,
+  .foto-8 {
+    @include sizes(250px, 250px);
+    margin: 20px;
+  }
+}
+
+/*gradientes*/
+.gradient-lineal {
+  @include sizes(250px, 220px);
+  background: linear-gradient(to bottom, #f270ec, #9c53c9);
+  margin: 20px;
+  justify-self: center;
+}
+
+.gradient-radial {
+  @include sizes(250px, 220px);
+  background: radial-gradient(circle, #f270ec, #9c53c9);
+  margin-left: 20px;
 }
 
 /*estilo quiensoy.html*/
-.contendor1{
-    overflow: auto;
-    text-align: justify;
-    .img9{
-        float: right;
-        margin-left: 5rem;
-        width: 20rem;
-        height: 20rem;
+.contendor1 {
+  overflow: auto;
+  text-align: justify;
 
-    }
+  .img9 {
+    float: right;
+    margin-left: 5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.contenido-asesorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.videos-rutinas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.ig-video {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 1rem;
+}
+
+.imagenes-homepage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }

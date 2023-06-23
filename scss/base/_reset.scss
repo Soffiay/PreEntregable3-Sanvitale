@@ -5,3 +5,23 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
+
+/*MediaQuery*/
+@mixin desktop {
+    @media screen and (max-widht: 991px){
+        @content;
+        
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-widht: 768px){
+        @content;        
+    }
+}
+
+@mixin mobile {
+    @media screen  and (max-widht: 576px){
+        @content;
+    }
+}

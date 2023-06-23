@@ -1,16 +1,17 @@
 footer {
-    background-color: #AF7AC5;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
+  background-color: #af7ac5;
+  display: flex;
 
-    .red1,
-    .red2,
-    .red3 {
-        color: antiquewhite;
-    }
+  justify-content: space-around;
+  margin: 10px;
+
+  .red1,
+  .red2,
+  .red3 {
+    color: antiquewhite;
+  }
 }
 
 .mapa {
-    margin: 10px;
+  margin: 10px;
 }
