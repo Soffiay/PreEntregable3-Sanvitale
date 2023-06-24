@@ -83,6 +83,13 @@ body .section1 .h2 .p {
   justify-self: center;
 }
 
+.gradient-lineal-1 {
+  width: 250 px;
+  height: 350 px;
+  background: radial-gradient(circle, #f270ec, #9c53c9);
+  margin-left: 20px;
+}
+
 .gradient-radial {
   width: 250px;
   height: 220px;
@@ -135,8 +142,12 @@ body .section1 .h2 .p {
   margin: 1rem;
 }
 
+.h4 {
+  margin: 15px;
+}
+
 footer {
-  background-color: #af7ac5;
+  background-color: darksalmon;
   display: flex;
   justify-content: space-around;
   margin: 10px;

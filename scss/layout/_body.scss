@@ -55,6 +55,12 @@ body {
   justify-self: center;
 }
 
+.gradient-lineal-1{
+  @include sizes(250 px, 350 px);
+  background: radial-gradient(circle, #f270ec, #9c53c9);
+  margin-left: 20px;
+}
+
 .gradient-radial {
   @include sizes(250px, 220px);
   background: radial-gradient(circle, #f270ec, #9c53c9);
@@ -105,4 +111,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 1rem;
+}
+
+
+.h4 {
+  margin: 15px;
 }
