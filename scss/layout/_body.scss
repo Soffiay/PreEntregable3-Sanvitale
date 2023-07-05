@@ -4,15 +4,28 @@
 }
 
 body {
-  background-image: url(../imagenes/pexels-engin-akyurt-9807347.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
   .section1 {
     .h2 {
-      .p {
-        justify-content: center;
+      .titulo-pagina {
+        display: inline-flex;
+        text-align: center;
+        margin: 35px;
+        font-family: 'Fasthand';
       }
+    }
+  }
+
+}
+
+/*body {
+  background-image: url(../imagenes/pexels-engin-akyurt-9807347.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;*/
+
+.section1 {
+  .h2 {
+    .p {
+      justify-content: center;
     }
   }
 }
@@ -33,48 +46,131 @@ body {
 .fotos-2,
 .fotos-3,
 .fotos-4 {
-  @include sizes(250px, 250px);
+  @include sizes(250px, 260px);
   margin: 20px;
+  display: inline-block;
+  justify-content: center;
+  border-radius: initial;
 }
 
-.etiqueta {
+.imgex1,
+.imgex2,
+.imgex3,
+.imex4,
+.imgex5 {
+  @include sizes(120px, 200px);
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imglid1,
+.imglid2,
+.imglid3,
+.imglid4,
+.imglid5 {
+  @include sizes(120px, 200px);
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imgbio1,
+.imgbio2,
+.imgbio3,
+.imgbio4,
+.imgbio5,
+.imgid1,
+.imgid2,
+.imgid3,
+.imgid4,
+.imgid5 {
+  @include sizes(120px, 200px);
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.marcas {
+  .titulo-marcas{
+    justify-content: center;
+    text-align: center;
+  }
   .foto-5,
   .foto-6,
   .foto-7,
   .foto-8 {
-    @include sizes(250px, 250px);
+    @include sizes(150px, 150px);
     margin: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 }
 
 /*gradientes*/
 .gradient-lineal {
   @include sizes(250px, 220px);
+  display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
   margin: 20px;
   justify-self: center;
+  padding: 10px;
+  text-align: justify;
 }
 
-.gradient-lineal-1{
+.gradient-lineal-marcas {
+  @include sizes(725px, 250px);
+  display: flex;
+  background: linear-gradient(to bottom, #f270ec, #9c53c9);
+  margin: 20px;
+  justify-self: center;
+  padding: 10px;
+  text-align: justify;
+}
+
+.gradient-lineal-1,
+.gradient-lineal-qs {
   @include sizes(250 px, 350 px);
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.gradient-lineal-as {
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  padding: 10px;
+  text-align: justify;
+
+  .texto-turnos {
+    margin: 10px;
+  }
 }
 
 .gradient-radial {
   @include sizes(250px, 220px);
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
+  padding: 10px;
+  text-align: justify;
 }
+
 
 /*estilo quiensoy.html*/
 .contendor1 {
   overflow: auto;
   text-align: justify;
+  margin: 15px;
 
   .img9 {
     float: right;
-    margin-left: 5rem;
+    margin: 20px;
     width: 20rem;
     height: 20rem;
   }
@@ -114,6 +210,10 @@ body {
 }
 
 
-.h4 {
+.h4,
+.subtitulo-marcas {
   margin: 15px;
+  justify-content: center;
+  text-align: center;
+
 }

@@ -1,15 +1,13 @@
 footer {
-  background-color: darksalmon;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 87%);
   display: flex;
-
   justify-content: space-around;
   margin: 10px;
+}
 
-  .red1,
-  .red2,
-  .red3 {
-    color: antiquewhite;
-  }
+.footer-links{
+  text-decoration: none;
 }
 
 

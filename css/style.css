@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: italic;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+  font-family: "Roboto", sans-serif;
+  /*font-style: italic;*/
 }
 
 /*MediaQuery*/
 header .navbar {
   display: flex;
-  background-color: darksalmon !important;
+  background-color: #FEE140;
+  background-image: linear-gradient(270deg, #FEE140 0%, #FA709A 87%);
   cursor: pointer;
 }
 header .navbar-brand img {
@@ -34,12 +36,18 @@ header .navbar-brand img {
   height: 100px;
 }
 
-body {
+body .section1 .h2 .titulo-pagina {
+  display: inline-flex;
+  text-align: center;
+  margin: 35px;
+  font-family: "Fasthand";
+}
+
+/*body {
   background-image: url(../imagenes/pexels-engin-akyurt-9807347.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-}
-body .section1 .h2 .p {
+  background-repeat: no-repeat;*/
+.section1 .h2 .p {
   justify-content: center;
 }
 
@@ -61,33 +69,115 @@ body .section1 .h2 .p {
 .fotos-3,
 .fotos-4 {
   width: 250px;
-  height: 250px;
+  height: 260px;
   margin: 20px;
+  display: inline-block;
+  justify-content: center;
+  border-radius: initial;
 }
 
-.etiqueta .foto-5,
-.etiqueta .foto-6,
-.etiqueta .foto-7,
-.etiqueta .foto-8 {
-  width: 250px;
-  height: 250px;
+.imgex1,
+.imgex2,
+.imgex3,
+.imex4,
+.imgex5 {
+  width: 120px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imglid1,
+.imglid2,
+.imglid3,
+.imglid4,
+.imglid5 {
+  width: 120px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imgbio1,
+.imgbio2,
+.imgbio3,
+.imgbio4,
+.imgbio5,
+.imgid1,
+.imgid2,
+.imgid3,
+.imgid4,
+.imgid5 {
+  width: 120px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+}
+
+.marcas .titulo-marcas {
+  justify-content: center;
+  text-align: center;
+}
+.marcas .foto-5,
+.marcas .foto-6,
+.marcas .foto-7,
+.marcas .foto-8 {
+  width: 150px;
+  height: 150px;
   margin: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /*gradientes*/
 .gradient-lineal {
   width: 250px;
   height: 220px;
+  display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
   margin: 20px;
   justify-self: center;
+  padding: 10px;
+  text-align: justify;
 }
 
-.gradient-lineal-1 {
+.gradient-lineal-marcas {
+  width: 725px;
+  height: 250px;
+  display: flex;
+  background: linear-gradient(to bottom, #f270ec, #9c53c9);
+  margin: 20px;
+  justify-self: center;
+  padding: 10px;
+  text-align: justify;
+}
+
+.gradient-lineal-1,
+.gradient-lineal-qs {
   width: 250 px;
   height: 350 px;
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.gradient-lineal-as {
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  padding: 10px;
+  text-align: justify;
+}
+.gradient-lineal-as .texto-turnos {
+  margin: 10px;
 }
 
 .gradient-radial {
@@ -95,16 +185,19 @@ body .section1 .h2 .p {
   height: 220px;
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
+  padding: 10px;
+  text-align: justify;
 }
 
 /*estilo quiensoy.html*/
 .contendor1 {
   overflow: auto;
   text-align: justify;
+  margin: 15px;
 }
 .contendor1 .img9 {
   float: right;
-  margin-left: 5rem;
+  margin: 20px;
   width: 20rem;
   height: 20rem;
 }
@@ -142,20 +235,23 @@ body .section1 .h2 .p {
   margin: 1rem;
 }
 
-.h4 {
+.h4,
+.subtitulo-marcas {
   margin: 15px;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
-  background-color: darksalmon;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 87%);
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
-footer .red1,
-footer .red2,
-footer .red3 {
-  color: antiquewhite;
+
+.footer-links {
+  text-decoration: none;
 }
 
 .mapa {
