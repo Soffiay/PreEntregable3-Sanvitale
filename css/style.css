@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Kalam:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
-  font-family: "Roboto", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-size: large;
   /*font-style: italic;*/
 }
 
@@ -13,6 +22,9 @@ header .navbar {
   background-color: #FEE140;
   background-image: linear-gradient(270deg, #FEE140 0%, #FA709A 87%);
   cursor: pointer;
+}
+header .navbar .nav-link {
+  font-family: "Kalam", cursive;
 }
 header .navbar-brand img {
   width: 250px;
@@ -36,38 +48,33 @@ header .navbar-brand img {
   height: 100px;
 }
 
-body .section1 .h2 .titulo-pagina {
-  display: inline-flex;
+body .section1, body .titulo-pagina {
+  display: flex;
   text-align: center;
-  margin: 35px;
-  font-family: "Fasthand";
+  margin: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
 }
 
-/*body {
+body {
   background-image: url(../imagenes/pexels-engin-akyurt-9807347.jpg);
   background-size: cover;
-  background-repeat: no-repeat;*/
-.section1 .h2 .p {
+  background-repeat: no-repeat;
+  /*fotos*/
+  /*gradientes*/
+  /*estilo quiensoy.html*/
+}
+body .section1 .h2 .p {
   justify-content: center;
 }
-
-/*fotos*/
-.img2,
-.img3,
-.img5,
-.img6,
-.img7 {
+body .imghome {
   display: inline-block;
   position: relative;
   justify-content: center;
   width: 250px;
   height: 300px;
 }
-
-.fotos-1,
-.fotos-2,
-.fotos-3,
-.fotos-4 {
+body .fotos-asesorias {
   width: 250px;
   height: 260px;
   margin: 20px;
@@ -75,12 +82,11 @@ body .section1 .h2 .titulo-pagina {
   justify-content: center;
   border-radius: initial;
 }
-
-.imgex1,
-.imgex2,
-.imgex3,
-.imex4,
-.imgex5 {
+body .imgex1,
+body .imgex2,
+body .imgex3,
+body .imex4,
+body .imgex5 {
   width: 120px;
   height: 200px;
   display: inline-block;
@@ -88,12 +94,11 @@ body .section1 .h2 .titulo-pagina {
   justify-content: center;
   margin: 10px;
 }
-
-.imglid1,
-.imglid2,
-.imglid3,
-.imglid4,
-.imglid5 {
+body .imglid1,
+body .imglid2,
+body .imglid3,
+body .imglid4,
+body .imglid5 {
   width: 120px;
   height: 200px;
   display: inline-block;
@@ -101,17 +106,16 @@ body .section1 .h2 .titulo-pagina {
   justify-content: center;
   margin: 10px;
 }
-
-.imgbio1,
-.imgbio2,
-.imgbio3,
-.imgbio4,
-.imgbio5,
-.imgid1,
-.imgid2,
-.imgid3,
-.imgid4,
-.imgid5 {
+body .imgbio1,
+body .imgbio2,
+body .imgbio3,
+body .imgbio4,
+body .imgbio5,
+body .imgid1,
+body .imgid2,
+body .imgid3,
+body .imgid4,
+body .imgid5 {
   width: 120px;
   height: 200px;
   display: inline-block;
@@ -119,38 +123,46 @@ body .section1 .h2 .titulo-pagina {
   justify-content: center;
   margin: 10px;
 }
-
-.marcas .titulo-marcas {
+body .h3 {
+  display: flex;
   justify-content: center;
-  text-align: center;
 }
-.marcas .foto-5,
-.marcas .foto-6,
-.marcas .foto-7,
-.marcas .foto-8 {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  display: inline-flex;
+body .Fotos-servicios {
+  display: flex;
+  justify-content: center;
+}
+body .marcas {
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
-
-/*gradientes*/
-.gradient-lineal {
-  width: 250px;
+body .marcas .fotos-marcas {
+  width: 100%;
+  height: 150px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .titulo-marcas {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  margin-top: 10px;
+}
+body .gradient-lineal {
+  width: 290px;
   height: 220px;
   display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
+  background-size: cover;
   margin: 20px;
   justify-self: center;
   padding: 10px;
   text-align: justify;
+  font-family: "Kalam", cursive;
 }
-
-.gradient-lineal-marcas {
-  width: 725px;
+body .gradient-lineal-marcas {
+  width: 95%;
   height: 250px;
   display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
@@ -158,51 +170,51 @@ body .section1 .h2 .titulo-pagina {
   justify-self: center;
   padding: 10px;
   text-align: justify;
+  justify-content: space-between;
+  font-family: "Kalam", cursive;
 }
-
-.gradient-lineal-1,
-.gradient-lineal-qs {
+body .gradient-lineal-1,
+body .gradient-lineal-qs {
   width: 250 px;
   height: 350 px;
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
   padding: 10px;
   text-align: justify;
+  font-family: "Kalam", cursive;
 }
-
-.gradient-lineal-as {
+body .gradient-lineal-as {
   background-color: #FAACA8;
   background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
   padding: 10px;
   text-align: justify;
+  font-family: "Kalam", cursive;
 }
-.gradient-lineal-as .texto-turnos {
+body .gradient-lineal-as .texto-turnos {
   margin: 10px;
+  font-family: "Kalam", cursive;
 }
-
-.gradient-radial {
+body .gradient-radial {
   width: 250px;
   height: 220px;
   background: radial-gradient(circle, #f270ec, #9c53c9);
   margin-left: 20px;
   padding: 10px;
   text-align: justify;
+  font-family: "Kalam", cursive;
 }
-
-/*estilo quiensoy.html*/
-.contendor1 {
+body .contendor1 {
   overflow: auto;
   text-align: justify;
   margin: 15px;
 }
-.contendor1 .img9 {
+body .contendor1 .img9 {
   float: right;
   margin: 20px;
   width: 20rem;
   height: 20rem;
 }
-
-.contenido-asesorias {
+body .contenido-asesorias {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,8 +222,7 @@ body .section1 .h2 .titulo-pagina {
   align-items: center;
   margin: 1rem;
 }
-
-.videos-rutinas {
+body .videos-rutinas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -219,14 +230,12 @@ body .section1 .h2 .titulo-pagina {
   align-items: center;
   margin: 1rem;
 }
-
-.ig-video {
+body .ig-video {
   max-width: 50%;
   max-height: 50%;
   margin: 1rem;
 }
-
-.imagenes-homepage {
+body .imagenes-homepage {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -234,12 +243,36 @@ body .section1 .h2 .titulo-pagina {
   align-items: center;
   margin: 1rem;
 }
-
-.h4,
-.subtitulo-marcas {
+body .h4,
+body .subtitulo-marcas, body .h3 {
   margin: 15px;
   justify-content: center;
   text-align: center;
+}
+
+.Foto-Servicio {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  display: flex;
+  margin: 2rem;
+}
+
+.boton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, 120%);
+  padding: 10px 20px;
+  background-color: #FAACA8;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.boton:first-child {
+  top: 10px;
+  left: 10px;
 }
 
 footer {
