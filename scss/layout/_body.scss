@@ -46,40 +46,7 @@ body {
   border-radius: initial;
 }
 
-.imgex1,
-.imgex2,
-.imgex3,
-.imex4,
-.imgex5 {
-  @include sizes(120px, 200px);
-  display: inline-block;
-  position: relative;
-  justify-content: center;
-  margin: 10px;
-}
-
-.imglid1,
-.imglid2,
-.imglid3,
-.imglid4,
-.imglid5 {
-  @include sizes(120px, 200px);
-  display: inline-block;
-  position: relative;
-  justify-content: center;
-  margin: 10px;
-}
-
-.imgbio1,
-.imgbio2,
-.imgbio3,
-.imgbio4,
-.imgbio5,
-.imgid1,
-.imgid2,
-.imgid3,
-.imgid4,
-.imgid5 {
+.imgex1 {
   @include sizes(120px, 200px);
   display: inline-block;
   position: relative;
@@ -95,18 +62,21 @@ body {
 .Fotos-servicios {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .marcas{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
    .fotos-marcas{
     @include sizes (100%, 150px);
     margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
   }
 }
 
@@ -128,10 +98,11 @@ body {
   padding: 10px;
   text-align: justify;
   font-family: 'Kalam', cursive;
+  flex-wrap: wrap;
 }
 
 .gradient-lineal-marcas {
-  @include sizes(95%, 250px);
+  @include sizes(95%, 30%);
   display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
   margin: 20px;
@@ -140,6 +111,7 @@ body {
   text-align: justify;
   justify-content: space-between;
   font-family: 'Kalam', cursive;
+  flex-wrap: wrap;
 }
 
 .gradient-lineal-1,
@@ -149,7 +121,8 @@ body {
   margin-left: 20px;
   padding: 10px;
   text-align: justify;
-  font-family: 'Kalam', cursive;;
+  font-family: 'Kalam', cursive;
+  flex-wrap: wrap;
 }
 
 .gradient-lineal-as {
@@ -158,6 +131,8 @@ body {
   padding: 10px;
   text-align: justify;
   font-family: 'Kalam', cursive;
+  flex-wrap: wrap;
+  display: flex;
 
   .texto-turnos {
     margin: 10px;
@@ -172,6 +147,7 @@ body {
   padding: 10px;
   text-align: justify;
   font-family: 'Kalam', cursive;
+  flex-wrap: wrap;
 }
 
 

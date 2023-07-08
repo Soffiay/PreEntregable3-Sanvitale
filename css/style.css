@@ -82,40 +82,7 @@ body .fotos-asesorias {
   justify-content: center;
   border-radius: initial;
 }
-body .imgex1,
-body .imgex2,
-body .imgex3,
-body .imex4,
-body .imgex5 {
-  width: 120px;
-  height: 200px;
-  display: inline-block;
-  position: relative;
-  justify-content: center;
-  margin: 10px;
-}
-body .imglid1,
-body .imglid2,
-body .imglid3,
-body .imglid4,
-body .imglid5 {
-  width: 120px;
-  height: 200px;
-  display: inline-block;
-  position: relative;
-  justify-content: center;
-  margin: 10px;
-}
-body .imgbio1,
-body .imgbio2,
-body .imgbio3,
-body .imgbio4,
-body .imgbio5,
-body .imgid1,
-body .imgid2,
-body .imgid3,
-body .imgid4,
-body .imgid5 {
+body .imgex1 {
   width: 120px;
   height: 200px;
   display: inline-block;
@@ -130,11 +97,13 @@ body .h3 {
 body .Fotos-servicios {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 body .marcas {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 body .marcas .fotos-marcas {
   width: 100%;
@@ -160,10 +129,11 @@ body .gradient-lineal {
   padding: 10px;
   text-align: justify;
   font-family: "Kalam", cursive;
+  flex-wrap: wrap;
 }
 body .gradient-lineal-marcas {
   width: 95%;
-  height: 250px;
+  height: 30%;
   display: flex;
   background: linear-gradient(to bottom, #f270ec, #9c53c9);
   margin: 20px;
@@ -172,6 +142,7 @@ body .gradient-lineal-marcas {
   text-align: justify;
   justify-content: space-between;
   font-family: "Kalam", cursive;
+  flex-wrap: wrap;
 }
 body .gradient-lineal-1,
 body .gradient-lineal-qs {
@@ -182,6 +153,7 @@ body .gradient-lineal-qs {
   padding: 10px;
   text-align: justify;
   font-family: "Kalam", cursive;
+  flex-wrap: wrap;
 }
 body .gradient-lineal-as {
   background-color: #FAACA8;
@@ -189,6 +161,8 @@ body .gradient-lineal-as {
   padding: 10px;
   text-align: justify;
   font-family: "Kalam", cursive;
+  flex-wrap: wrap;
+  display: flex;
 }
 body .gradient-lineal-as .texto-turnos {
   margin: 10px;
@@ -202,6 +176,7 @@ body .gradient-radial {
   padding: 10px;
   text-align: justify;
   font-family: "Kalam", cursive;
+  flex-wrap: wrap;
 }
 body .contendor1 {
   overflow: auto;
